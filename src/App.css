@@ -1,0 +1,224 @@
+*{
+  box-sizing: border-box;
+}
+img{
+  width: 100%;
+ /* height: auto;
+  min-height: 100%;*/
+}
+.background {
+  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url('./images/welcome.jpg');
+  color:white ;
+  background-size: cover;
+}
+.background:before {
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  background: rgba(99,179,237,.2);
+
+}
+.defaulthero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*min-height: calc(100vh - 124px);*/
+  /*background: url(./images/welcome.jpg) center/cover no-repeat;*/
+}
+.heroText {
+  position: absolute;
+  left: 45%;
+  top:50%;
+  width: 300px;
+  color: black;
+}
+.bg-secondary{
+  background-image: url('./images/house4.jpg');
+  width: 100%;
+  background-size: cover;
+  /*background-position: center;*/
+  height: auto;
+}
+.vertical-align-center {
+  /*vertical-align: middle;*/
+  /*margin-top: auto;*/
+  /*position: absolute;
+   top:45%;
+    left:45%;*/
+    display: table-cell;
+    vertical-align: middle;
+
+  /*padding: 50% auto;*/
+}
+.related-images {
+  width: 100%;
+  padding: 50% 0;
+  position: relative;
+  overflow: hidden;
+  height: 0;
+
+}
+
+.title {
+  display: inline-block;
+}
+.title::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #008CBA;
+    transition: width .3s;
+}
+.backIcon {
+  position: absolute;
+  top:10px;
+  right: 10px;
+  color:white;
+  font-size: 20px;
+cursor: pointer;
+}
+.backIcon:hover {
+  color: #008CBA;
+}
+.single-name {
+  font-size: 1.2rem;
+  color: white;
+  position: absolute;
+  padding: 20px;
+  left:20px;
+  bottom: 20px;
+}
+.share {
+  color:white;
+  position: absolute;
+  bottom:20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.title:hover::after {
+    width: 100%;
+}
+
+.singleBanner {
+  height: 80vh;
+  min-width:100%;
+  /*object-fit: contain;*/
+  background-size: cover;
+  object-fit:cover;
+  /*background-position: center;*/
+
+}
+
+/*input ,select{
+  border:2px solid #008CBA; ;
+}*/
+/*input:focus{
+  outline: none;
+}*/
+.input-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+.icon {
+  padding: 10px;
+
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  /*width: 100%;*/
+  /*height: 100%;*/
+  text-align: center;
+}
+.image {
+  /*display: block;*/
+  max-width: 100%;
+  height: auto;
+  /*background-size: cover;*/
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+.bg {
+  background-color: #008CBA;
+}
+.container:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#testimony {
+  background-image: url('./images/testimony.jpg');
+  background-position: center;
+  background-size: cover;
+  
+}
+blockquote {
+font-family: Georgia, serif;
+font-size: 18px;
+font-style: italic;
+
+max-width: 500px;
+margin: 0.25em 0;
+-webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+text-align: center;
+margin:0 auto;
+padding: 0.25em 40px;
+line-height: 1.45;
+position: relative;
+color: #fff;
+}
+blockquote:before {
+display: block;
+content: "\201C";
+font-size: 80px;
+position: absolute;
+left: -20px;
+top: -20px;
+color: #fff;
+}
+blockquote cite {
+color: #999999;
+font-size: 14px;
+display: block;
+margin-top: 5px;
+}
+ 
+blockquote cite:before {
+content: "\2014 \2009";
+}
+
+
+
