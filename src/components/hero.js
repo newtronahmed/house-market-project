@@ -20,7 +20,7 @@ const Hero = ({children,type}) => {
       <Zoom {...zoomOutProperties}>
         {images.map((each, index) => (
           <div key={index} className='h-full' style={{width: "100%"}}>
-            <img style={{width: "100%" }} src={each} className='h-full' />
+            <img style={{width: "100%" }} src={each} alt='images'className='h-full' />
           </div>
         ))}
       </Zoom>
