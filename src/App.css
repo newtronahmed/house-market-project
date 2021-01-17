@@ -110,8 +110,8 @@ cursor: pointer;
   min-width:100%;
   /*object-fit: contain;*/
   background-size: cover;
-  object-fit:cover;
-  /*background-position: center;*/
+  /* object-fit:cover; */
+  background-position: center;
 
 }
 

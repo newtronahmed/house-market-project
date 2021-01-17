@@ -21,7 +21,10 @@ const SingleRoom = (props) => {
     <div>
     	<div className=' wow slideInUp relative'>
     		<img src={defaultImg} alt={single.name} className='singleBanner' />
-    		<FaArrowLeft className="backIcon"/>
+			<Link to='/'>
+				<FaArrowLeft className="backIcon"/>
+			</Link>
+    			
     		<div className='single-name wow slideInUp bg-black bg-opacity-50'>
                 <p>{single.name}</p>
             </div>
@@ -29,7 +32,7 @@ const SingleRoom = (props) => {
                 <Link to='/'><FaShare /></Link>	
     		</div>
     	</div>
-    	<div  className='container grid  grid-cols-3 gap-5 p-10'>
+    	<div  className='container grid  grid-cols-3 lg:gap-5 gap-2 py-10 px-5 lg:px-10'>
     		{        
                 related.map((each,i)=>(
     			<div className='related-images wow slideInUp ' key={i} >
