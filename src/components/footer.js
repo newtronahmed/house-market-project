@@ -18,19 +18,20 @@ const Footer = (props) => {
     		</div>
     		<div className='lg:col-start-3 lg:col-span-2  w-ful'>
     			<p className='font-bold text-2xl lg:text-center'>Company</p>
-                <div className='lg:text-center'>
-                    <div>About us</div>
-                    <div>About us</div>
-                    <div>About us</div>
-                    <div>About us</div>
+                <div className='text-center'>
+                    <div className='cursor-pointer'>About us</div>
+                    <div className='cursor-pointer'>Blog</div>
+                    <div className='cursor-pointer'>Testimonials</div>
+                    <div className='cursor-pointer'>Pricing</div>
                 </div>
     		</div>
     		
     		<div className='lg:col-end-7 lg:col-span-2  w-full'>
     			<p className='font-bold text-2xl text-center bg-white mb-4'>Stay up to date</p>
     			<div className="input-container">
-			    <FaEnvelope className="icon text-center font-bold h-12 " />
+			    
 			    <input className="input-field border-blue-200 border-2" type="text" placeholder="Email" name="email" />
+				<FaEnvelope className="icon text-center font-bold h-12 cursor-pointer " />
 			  </div>
 
     		</div>

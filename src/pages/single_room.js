@@ -20,7 +20,7 @@ const SingleRoom = (props) => {
   return (
     <div>
     	<div className=' wow slideInUp relative'>
-    		<img src={defaultImg} alt={single.name} className='singleBanner' />
+    		<img src={defaultImg} alt={single.name} className='h-full-screen' />
 			<Link to='/'>
 				<FaArrowLeft className="backIcon"/>
 			</Link>

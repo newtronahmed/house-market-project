@@ -104,6 +104,9 @@ cursor: pointer;
 .title:hover::after {
     width: 100%;
 }
+.room-image{
+  min-height: calc(100% - 48px);
+}
 
 .singleBanner {
   height: 80vh;

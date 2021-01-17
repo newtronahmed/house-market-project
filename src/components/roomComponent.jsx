@@ -12,7 +12,10 @@ export default function RoomComponent({data}) {
 
 				return (
 				<div className=" wow fadeIn border-blue-500 border-2 relative" key={each.id}>
-				  <img src={each.images[0]} alt="Avatar" />
+					
+						<img src={each.images[0]} alt="Avatar" className='h-48'/>
+				
+				  
 				  <div className=" h-14 p-3 bg-blue-200 flex justify-between ">
 				  	<div className='inline bg-blue-600 rounded '>${each.price}</div>
 				  	<div>
