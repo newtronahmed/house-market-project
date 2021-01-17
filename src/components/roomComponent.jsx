@@ -6,7 +6,7 @@ import Rating from 'react-rating'
 export default function RoomComponent({data}) {
 
 	return (
-		<div className='grid grid-cols-1 lg:grid-cols-4 gap-2 mb-10 '>
+		<div className='grid grid-cols-1 lg:grid-cols-4 gap-2 mb-10 p-6 '>
 		<FlipMove typeName={null}>
 			{data.map(each=>{
 

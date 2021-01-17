@@ -30,7 +30,7 @@ export default class Services extends React.Component {
     return (
     <section >
     	<Title title="Services"/>
-      <div className='grid  grid-cols-2   lg:grid-cols-4 gap-1'>
+      {/* <div className='grid  grid-cols-2   lg:grid-cols-4 gap-1'>
       	{this.state.services.map(service=>(
       			<div className='rounded shadow-sm text-center wow slideInUp border-2 border-blue-500'>
       				<div className='bg p-2 font-bold '>{service.title}</div>
@@ -40,7 +40,7 @@ export default class Services extends React.Component {
       				</div>
       			</div>
       		))}
-      </div>
+      </div> */}
       <div className='grid grid-cols-1 md:grid-cols-2  gap-12 md:p-16'>
         <div className="wow slideInUp">
           {this.state.services.map(service=>(
