@@ -20,29 +20,29 @@ export default function Filters() {
 	return (
 		<div className="bg-blue-200 h-64 py-10 mb-20 ">
 		<div className='flex flex-col rounded md:flex-row md:justify-evenly bg-white items-center p-3'>
-			<div className="md:m-2">
+			<div className="mt-2 md:mt-0 ">
 				Type<Dropdown data={types} name='type' label={type} />
 			</div>
-			<div className="md:m2">
+			<div className="mt-2 md:mt-0 ">
 				Location<Dropdown data={locations} name='location' label={location} />
 
 			</div>
-			<div>
+			<div className='mt-2 md:mt-0'>
 				bedrooms <Dropdown data={bedrooms} name='bedroom' label={bedroom} />
 			</div>
-			<div className="mt-2">
-				{price}<input type="range" min={minPrice} max={maxPrice} name='price' value={price} onChange={handleFilterChange} />
+			<div className="mt-2 md:mt-0">
+				${price}<input type="range" min={minPrice} max={maxPrice} name='price' value={price} onChange={handleFilterChange} />
 			</div>
-			<div className="mt-2">
+			<div className="mt-2 md:mt-0">
 				Area &nbsp;
 				<input type="number" className="w-24 shadow" value={minArea} name='minArea'  onChange={handleFilterChange} />
 				<input type="number" className="w-24 shadow"  value={maxArea} name='maxArea'  onChange={handleFilterChange} />
 			</div>
-			<div>
+			<div className='mt-2 md:mt-0'>
 				<label htmlFor="rent">Rent </label>
 				<input type="checkbox" name='rent' value={rent} onChange={handleFilterChange}/>
 			</div>
-			<div>
+			<div className='mt-2 md:mt-0'>
 				<label htmlFor="sale">For Sale</label>
 				<input type="checkbox" name='sale' value={sale} onChange={handleFilterChange}/>
 			</div>

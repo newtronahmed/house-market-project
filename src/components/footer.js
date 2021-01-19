@@ -7,7 +7,7 @@ const Footer = (props) => {
     <div className='p-6 '>
     	<div className='grid lg:grid-cols-6 '>
     		<div className=' lg:col-start-1 lg:col-span-2 '>
-        		<a href="#" className='p-3'>Buy House!</a>
+        		<a href="#" className='p-5 text-center lg:text-left'>Buy House!</a>
         		<p className='p-5'>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Cras ultricies ligula sed magna dictum porta. Donec rutrum congue leo eget malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus.</p>
         		<p className='p-5'>
         			<a href="#" className='bg-blue-300  rounded-full inline-flex text-2xl mx-1 p-2'><FaTwitter /></a>
@@ -17,7 +17,7 @@ const Footer = (props) => {
         		</p>
     		</div>
     		<div className='lg:col-start-3 lg:col-span-2  w-ful'>
-    			<p className='font-bold text-2xl lg:text-center'>Company</p>
+    			<p className='font-bold text-2xl text-center'>Company</p>
                 <div className='text-center'>
                     <div className='cursor-pointer'>About us</div>
                     <div className='cursor-pointer'>Blog</div>

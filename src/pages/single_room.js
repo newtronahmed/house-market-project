@@ -20,13 +20,13 @@ const SingleRoom = (props) => {
   return (
     <div>
     	<div className=' wow slideInUp relative'>
-    		<img src={defaultImg} alt={single.name} className='h-full-screen' />
+    		<img src={defaultImg} alt={single.name} className='singleBanner' />
 			<Link to='/'>
 				<FaArrowLeft className="backIcon"/>
-			</Link>
+			</Link> 
     			
-    		<div className='single-name wow slideInUp bg-black bg-opacity-50'>
-                <p>{single.name}</p>
+    		<div className='single-name p-2 lg:p-6 wow slideInUp bg-black bg-opacity-50'>
+                <p className='text-xs md:text-lg lg:text-xl '>{single.name}</p>
             </div>
     		<div className='share'>
                 <Link to='/'><FaShare /></Link>	
@@ -40,13 +40,17 @@ const SingleRoom = (props) => {
     			</div>
     		))}
     	</div>
-    	<div className='grid grid-cols-2 gap-10 p-10 '>
+    	<div className='grid grid-cols-2 gap-2 p-2 lg:gap-10 lg:p-10 '>
     		<div>
 	    		<Title title='Details' />
 	    		<article className=' wow slideInLeft lg:tracking-wide leading-7 '>
-	    		e 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	    quis nostrud exercitation .</article>
+					{single.description}
+					<p className='grid grid-cols-3'>
+						{single.extras.map(each=>(
+							<p className='w-full'>*{each}</p>
+						))}
+					</p>
+				</article>
     		</div>
     		<div>
 	    		<Title title='Info' />
@@ -54,8 +58,8 @@ const SingleRoom = (props) => {
 	    			<h6 className='text-xl  tracking-wider'>Price: $ {single.price}</h6>
 	    			<h6 className='text-xl tracking-wider'>Area : {single.area}SQFT</h6>
 	    			<h6 className='text-xl tracking-wider'>Bedroom : {`${single.bedroom}${single.bedroom>1 ? ' bedrooms': ' bedroom'} `}</h6>
-                    <div><Rating initialRating={single.star} emptySymbol={<FaStar className='text-white' />} fullSymbol={<FaStar />}  readonly />
-</div>
+                <Rating initialRating={single.star} emptySymbol={<FaStar className='text-white' />} fullSymbol={<FaStar />}  readonly />
+
 	    		</article>
     		</div>
     	</div>

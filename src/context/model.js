@@ -1,6 +1,6 @@
 import React,{createContext} from 'react';
 import Client from '../contentful'
-import data from '../data.js'
+// import data from '../data.js'
 export const ModelContext = createContext()
 
 

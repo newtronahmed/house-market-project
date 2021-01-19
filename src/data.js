@@ -741,3 +741,5 @@ export default [
 },
 
 ]
+["air conditioning" , 'washing machine', 'garden', 'microwave', 'internet', 'roof terrace']
+["air conditioning", "Swimming pool","Water reservoir","Generator", "microwave","nternet","roof terrace"]
